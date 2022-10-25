@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Letters and Languages</title>
+    <link rel="stylesheet" href="style.css">
+    <link <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c0bf7822c.js" crossorigin="anonymous"></script>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.jpg"></a>
+            <div class= "nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="">ACCUEIL</a> </li>
+                    <li> <a href="">NOS OFFRES</a> </li>
+                    <li> <a href="">METHODE</a> </li>
+                    <li> <a href="">TEMOIGNAGES</a> </li>
+                    <li> <a href="">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1> Langue.<br> Education.<br> Voyage. <br></h1>
+    <p> Nous ouvrons le monde par la formation linguistique, les échanges culturels, les programmes académiques et les voyages éducatifs.
+    </p>
+    <a href="" class="hero-btn">Reserver un cours d'essai gratuit</a>
+</div>
+
+    </section>
+
+
+<!--Nos offres-->
+
+<section class="offres">
+    <h1> Nos offres </h1>
+    <p> Nous vous proposons des cours d'anglais individuels en ligne avec nos profs natifs et certifiés. Après votre essai gratuit vous pouvez acheter vos cours en avance par lots de 10 ou de 20 ou alors de cours uniques. Vous pouvez décider de suivre vos cours à un horaire qui vous convient, une fois par semaines, deux fois par semaines ou toutes les deux semaines. Nous sommes très flexibles et nous adaptons à votre emploi du temps.</p>
+
+    <div class = "row">
+        <div class="offres-col">
+            <h3> 1 heure </h3>
+            <p>  35€  </p>
+        </div>
+        <div class="offres-col">
+            <h3> PACK 10 heures</h3>
+            <p> 320€  </p>
+        </div>
+        <div class="offres-col">
+            <h3> PACK 20 heures </h3>
+            <p> 650€ </p>
+        </div>
+</section>
+
+<!--Methode-->
+
+<section class="methode">
+
+    <h1> Notre methode</h1>
+    <p> Apprenez l'anglais. <br>
+        À votre façon. <br>
+        Boostez votre carrière, voyagez à l'étranger, passez un examen et bien plus encore. Tous nos programmes comprennent des cours interactifs qui vous permettront d'acquérir des compétences pratiques et de rapidement gagner en assurance en anglais. Vos professeurs, des quatre coins du monde, vous aideront à lire, écrire, parler et vivre l'anglais.
+    </p>
+    <div class="row">
+        <div class="methode-col">
+            <img src="images/airplane.jpg">
+            <div class="layer">
+                <h3>VOYAGEZ</h3>
+            </div>
+        </div>
+            <div class="methode-col">
+                <img src="images/only-big-ben.jpg">
+                <div class="layer">
+                    <h3>BOOSTEZ VOTRE CARRIERE</h3>
+            </div>
+        </div>
+            <div class="methode-col">
+                <img src="images/business.jpeg">
+                <div class="layer">
+                    <h3>PASSEZ DES EXAMENS</h3>
+            </div>    
+        </div>
+    </div>
+</section>
+
+<!--Temoignages -->
+
+<section class="temoignages">
+    <h1> Témoignages d'élèves </h1>
+    <p> </p>
+
+    <div class="row">
+        <div class="temoignages-col">
+            <img src="images/b.png">
+            <div>
+                <p>Parfait ! Sofia est un excellent professeur. Patiente, rigoureuse et pédagogue, elle s'adapte parfaitement à l'élève et à ses besoins. Elle a été très efficace pour aider mon fils à réussir un examen.</p>
+                <h3> Berengère </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="temoignages-col">
+            <img src="images/s.png">
+            <div>
+                <p>Parfait ! Sofia est une excellente professeure ! Elle s'adapte aux besoins de chacun en proposant des cours personnalisés et dynamiques et ce toujours avec le sourire.</p>
+                <h3> Salomé </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--call to action -->
+<section class="cta">
+    <h1>Réservez maintenant un premier cours d'essai gratuit</h1>
+    <a href="" class="hero-btn">CONTACTEZ-NOUS</a>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Javascript pour le Menu Toggle-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+
+</html>

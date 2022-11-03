@@ -13,10 +13,11 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li> <a href="index.html">ACCUEIL</a> </li>
-                    <li> <a href="#offres">NOS OFFRES</a> </li>
-                    <li> <a href="#methode">METHODE</a> </li>
-                    <li> <a href="#temoignages">TEMOIGNAGES</a> </li>
-                    <li> <a href="contact.html">CONTACT</a> </li>
+                    <!-- les boutons du menu ne fonctionnent pas -->
+                    <li> <a href=index.html#offres>NOS OFFRES</a> </li>
+                    <li> <a href=index.html#methode>METHODE</a> </li>
+                    <li> <a href=index.html#temoignages>TEMOIGNAGES</a> </li>
+                    <li> <a href=contact.html>CONTACT</a> </li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -27,8 +28,6 @@
         <div class="container">
             <form action="https://formsubmit.co/saracaballerofr@hotmail.com" method="POST">
                 <h3>Contactez nous</h3>               
-                <label class="rien" name="rien"></label> 
-                <!-- si je met pas le label les accents ne s'affichent pas, pourquoi??? -->
                 <input type="text" id="prenom" placeholder="Prénom" required>
                 <input type="text" id="nom" placeholder="Nom" required> 
                 <input type="text" id="email" placeholder="Adresse Email" required> 

@@ -25,33 +25,19 @@
 
 <!-- Form -->
         <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <h3>Contactez nous</h3>
-                <input type="text" id="prenom" placeholder="Prénom" required> 
+            <form action="https://formsubmit.co/saracaballerofr@hotmail.com" method="POST">
+                <h3>Contactez nous</h3>               
+                <label class="rien" name="rien"></label> 
+                <!-- si je met pas le label ça ne marche pas, pourquoi??? -->
+                <input type="text" id="prenom" placeholder="Prénom" required>
                 <input type="text" id="nom" placeholder="Nom" required> 
                 <input type="text" id="email" placeholder="Adresse Email" required> 
                 <input type="text" id="phone" placeholder="Numéro de téléphone">
-                <input type="texte" id="age" placeholder="Age">
-                <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                </select>
+                <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                 <button type="submit">Envoyer</button>
             </form>
         </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail(){  
-                Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "mail1@gmail.com",
-                    Password : "password",
-                    To : 'mail2@hotmail.com',
-                    From : document.getElementById("email").value,
-                    Subject : "Nouveau message",
-                    Body : "Un futur élève vous a envoyé un message: "
-                }).then(
-                    message => alert(message)
-                );
 
-            }
-        </script>
   </body>
 </html> 

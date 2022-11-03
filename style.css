@@ -283,9 +283,9 @@ form{
 form h3{
     color: #555;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-form input, form textarea{
+form input, form textarea, form select{
     border: 0;
     margin: 10px 0;
     padding: 20px;
